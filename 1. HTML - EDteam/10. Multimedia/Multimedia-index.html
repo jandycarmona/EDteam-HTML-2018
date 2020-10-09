@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <style>
+        video {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <video id='video' src="media/ABC en inglés.mp4" poster="media/LingoKids.jpg"></video>
+    <!-- autoplay    controls    poster-->
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+
+    <audio src="media/Run to You- Flo-Rida ft. T-Pain and Red Foo.mp3" controls></audio>
+
+    <script>
+        const video = document.getElementById('video');
+        const play = document.getElementById('play');
+        const pause = document.getElementById('pause');
+
+        play.addEventListener('click', () => {
+            video.play()
+        })
+
+        pause.addEventListener('click', () => {
+            video.pause()
+        })
+    </script>
+
+    <!--console.dir($0) para revisar-->
+    <!--codec h264    videojs-->
+</body>
+
+</html>

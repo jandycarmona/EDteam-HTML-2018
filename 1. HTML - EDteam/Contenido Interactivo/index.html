@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactividad</title>
+</head>
+
+<body>
+    <dialog id="modal">
+        <h2>Curso HTML5 Desde Cero</h2>
+        <p>Precio: S/ 134.00</p>
+        <p>Profesor: Álvaro Felipe</p>
+        <button id="close">Ocultar modal</button>
+    </dialog>
+
+    <button id="boton">Mostrar modal</button>
+
+    <h1>Contenido interactivo</h1>
+    <details>
+        <summary>HTML</summary>
+        <p>Lenguaje de marcado de hipertexto.</p>
+        <p>Se creó en 1989.</p>
+    </details>
+
+    <h1>Contenido Embebido</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gAg3uMlNyHA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d967.631767743444!2d-75.74376504576686!3d-14.046024523887592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1594574417725!5m2!1ses-419!2spe"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    <script>
+        const modal = document.getElementById('modal');
+        const boton = document.getElementById('boton');
+        const close = document.getElementById('close');
+
+        boton.addEventListener('click', () => {
+            modal.setAttribute('open', 'true')
+        })
+
+        close.addEventListener('click', () => {
+            modal.removeAttribute('open')
+        })
+    </script>
+</body>
+
+</html>
